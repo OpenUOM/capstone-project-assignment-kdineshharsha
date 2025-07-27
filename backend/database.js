@@ -72,7 +72,6 @@ const deleteTeacher = async (id) => {
   });
 };
 
-// 🎓 STUDENT FUNCTIONS
 const addStudent = async (id, name, age, hometown) => {
   const sql = `INSERT INTO student(id, name, age, hometown) VALUES (?, ?, ?, ?)`;
   return new Promise((resolve, reject) => {
@@ -123,7 +122,6 @@ const deleteStudent = async (id) => {
   });
 };
 
-// ✅ EXPORT FUNCTIONS
 module.exports = {
   addTeacher,
   readTeachers,
